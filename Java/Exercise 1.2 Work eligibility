@@ -22,7 +22,6 @@ public class Zadacha2 {
                 e.nextLine();
             }
         }
-
         if (a<16){
             System.out.println("You are not eligible to work. Sorry.");
         }
@@ -32,6 +31,5 @@ public class Zadacha2 {
         if (a>80) {
             System.out.println("I don't know if you are but good luck.");
         }
-
     }
 }
