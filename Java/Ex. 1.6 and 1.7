@@ -1,0 +1,26 @@
+package com.qarayna;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Zadachi6i7 {
+    public static void main(String[] args) {
+//        6. Given a list iterate it and display numbers which are divisible by 5 and if you find number greater than 150 stop the loop
+//        iteration list1 = [12, 15, 32, 42, 55, 75, 122, 132, 150, 180, 200]
+
+        int i=0;
+        int[] list1 = {12, 15, 32, 42, 55, 75, 122, 132, 150, 180, 200};
+        for (i=0;i< list1.length;i++){
+            if (list1[i]%5==0) {
+                if (list1[i]>150){
+                break;}
+                System.out.println("Number divisble by 5 is: "+ list1[i]);}
+            }
+//7. Reverse the following list using for loop list1 = [10, 20, 30, 40, 50]
+
+        int [] list2 = {10, 20, 30, 40, 50};
+        for (int o=4;o>=0;o--) {
+            System.out.println(list2[o]);
+        }
+    }
+}
