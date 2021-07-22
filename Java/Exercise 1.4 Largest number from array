@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Zadacha4 {
     public static void main(String[] args) {
-////4. Find the largest number from a given array and print it in a console. Hint: use for loop
+//4.Find biggest element of an array and print it in the console
         int n = 0;
         Scanner sc = new Scanner(System.in);
         boolean valid = false;
@@ -21,13 +21,13 @@ public class Zadacha4 {
                 sc.nextLine();
             }
         }
-        int[] array = new int[n];
+        double [] array = new double [n];
         System.out.println("Enter the elements of the array: ");
         for (int i = 0; i < n; i++) {
             try {
                 array[i] = sc.nextDouble();
             } catch (InputMismatchException | ArrayIndexOutOfBoundsException p){
-             System.out.println("Enter an integer value");
+                System.out.println("Enter some kind of number");
                 sc.nextLine();
                 i--;
             }
@@ -36,7 +36,7 @@ public class Zadacha4 {
         for (int i = 0; i < n; i++) {
             System.out.println(array[i]);
         }
-        int largest = array[0];
+        double largest = array[0];
         for ( int i = 1;i < array.length; i++) {
             if (array[i] > largest)
                 largest = array[i];
